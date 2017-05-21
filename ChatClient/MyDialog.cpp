@@ -44,9 +44,11 @@ void CMyDialog::OnBnClickedButton1()
 {
 	//서버에 접속합니다
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	UpdateData(TRUE);
 
 	CString str;
 	m_socCom.Create();
+
 	if (m_socCom.Connect(m_strSend, 5000)) {
 		str.Format(L"서버 접속성공");
 		SetDlgItemText(IDC_STATIC_CONNECT, str);
@@ -57,7 +59,6 @@ void CMyDialog::OnBnClickedButton1()
 	InitGame();
 	Shuffle();
 
-	UpdateData(FALSE);
 }
 
 /*----------------------------------------------*/
