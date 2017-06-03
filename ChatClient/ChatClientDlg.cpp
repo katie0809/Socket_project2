@@ -8,7 +8,7 @@
 #include "afxdialogex.h"
 #include "MyDialog.h"
 #include "puzzle_gameDlg.h"
-
+#include "OmokDlg.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -73,6 +73,8 @@ BEGIN_MESSAGE_MAP(CChatClientDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON1, &CChatClientDlg::OnBnClickedButton1)
 	ON_BN_CLICKED(IDC_BUTTON3, &CChatClientDlg::OnBnClickedButton3)
+	ON_BN_CLICKED(IDC_BUTTON_OMOK, &CChatClientDlg::OnBnClickedButtonOmok)
+	//ON_BN_CLICKED(IDC_BUTTON_CONNECT, &CChatClientDlg::OnBnClickedButtonConnect)
 END_MESSAGE_MAP()
 
 
@@ -171,6 +173,19 @@ void CChatClientDlg::OnBnClickedButton1()
 	m_dialog->Create(CMyDialog::IDD);
 	m_dialog->ShowWindow(SW_SHOW);
 }
+
+
+// 오목버튼 
+void CChatClientDlg::OnBnClickedButtonOmok()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	OmokDlg omokDlg;
+	this->ShowWindow(SW_HIDE);
+
+	omokDlg.DoModal();
+	this->ShowWindow(SW_SHOW);
+}
+
 
 
 void CChatClientDlg::OnOK()
