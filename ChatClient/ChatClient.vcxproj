@@ -87,7 +87,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -188,6 +188,8 @@
     <ClInclude Include="ChatClient.h" />
     <ClInclude Include="ChatClientDlg.h" />
     <ClInclude Include="MyDialog.h" />
+    <ClInclude Include="OmokDlg.h" />
+    <ClInclude Include="OmokWnd.h" />
     <ClInclude Include="puzzle_gameDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SocCom.h" />
@@ -198,6 +200,8 @@
     <ClCompile Include="ChatClient.cpp" />
     <ClCompile Include="ChatClientDlg.cpp" />
     <ClCompile Include="MyDialog.cpp" />
+    <ClCompile Include="OmokDlg.cpp" />
+    <ClCompile Include="OmokWnd.cpp" />
     <ClCompile Include="puzzle_gameDlg.cpp" />
     <ClCompile Include="SocCom.cpp" />
     <ClCompile Include="stdafx.cpp">

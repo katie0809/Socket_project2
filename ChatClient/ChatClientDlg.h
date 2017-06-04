@@ -38,4 +38,7 @@ public:
 	class puzzle_gameDlg *m_dialog2;
 	virtual void OnOK();
 	afx_msg void OnBnClickedButton3();
+	afx_msg void OnBnClickedButtonOmok();
+	//afx_msg void OnBnClickedButtonConnect(); // 서버 연결버튼
+
 };

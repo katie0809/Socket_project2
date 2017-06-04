@@ -36,10 +36,16 @@
     <ClInclude Include="MyDialog.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SocCom.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="puzzle_gameDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OmokWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OmokDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SocCom.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -60,6 +66,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="puzzle_gameDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OmokDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OmokWnd.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
